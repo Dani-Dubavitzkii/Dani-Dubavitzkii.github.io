@@ -1,2 +1,2 @@
-# Dani-Dubavitzkii.github.io
+# Даниил Pug
 Публикация моего первого сайта.
