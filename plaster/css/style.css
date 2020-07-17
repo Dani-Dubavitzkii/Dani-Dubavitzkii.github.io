@@ -1,0 +1,824 @@
+@font-face {
+  font-family: 'Proxima Nova_Reg';
+  src: local("../fonts/Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova_Bold';
+  src: local("../fonts/Proxima Nova Bold"), local("Proxima-Nova-Bold"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  font-family: 'Proxima Nova_Reg', sans-serif;
+  font-size: 10px;
+  min-height: auto;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button:focus, input:focus, a:focus, textarea:focus {
+  outline: none;
+}
+
+section {
+  padding: 10rem 0;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+.button {
+  background-color: #ffba15;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 2rem 2.7rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #f0a900;
+}
+
+.button:active {
+  border: none;
+  outline: none;
+  background: #ffba15;
+}
+
+.button:focus {
+  background: #ffba15;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button:visited {
+  border: none;
+  outline: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  background: #ffba15;
+  border: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.telephone {
+  text-transform: uppercase;
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  font-size: 2rem;
+  color: #292929;
+}
+
+.link-green {
+  color: #70c849;
+  border-bottom: 2px dashed;
+}
+
+.link-green:hover {
+  color: #4e972e;
+}
+
+.form {
+  background: #ffffff;
+  text-align: center;
+  padding: 4.5rem 4rem;
+  margin-bottom: 3.6rem;
+}
+
+.form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+}
+
+.form input, .form textarea {
+  display: block;
+  margin: 2.5rem 0;
+  width: 100%;
+  padding: 1.5rem;
+  height: 5.5rem;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+.form input[type="submit"], .form textarea[type="submit"] {
+  font-size: 1.4rem;
+}
+
+.form span {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.title {
+  color: #292929;
+  text-align: center;
+  margin: -3.5rem 0 3rem;
+}
+
+.title h2 {
+  font-size: 3.6rem;
+  font-family: 'Proxima Nova_Bold', sans-serif;
+}
+
+.title p {
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  font-family: 'Proxima Nova_Reg', sans-serif;
+}
+
+.header {
+  padding: 3rem 0 5rem;
+  background: url(../img/header/bg-fon.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.header-het-tel {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  font-size: 2rem;
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  text-align: right;
+}
+
+.header-het-tel a {
+  color: #292929;
+}
+
+.header-het-btn {
+  text-align: right;
+}
+
+.header-main {
+  margin-top: 10rem;
+}
+
+.header-main span {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.header-info {
+  font-size: 2.4rem;
+}
+
+.header-info h1 {
+  text-transform: uppercase;
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  font-size: 4rem;
+}
+
+.header-info-price {
+  display: inline-block;
+  width: 22.5rem;
+  padding: 2rem 4rem;
+  background-color: #70c849;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.header-info h2 {
+  text-transform: uppercase;
+}
+
+.advantages {
+  background: #f5f5f5;
+}
+
+.advantages-block-slider-item {
+  display: inline-block;
+  text-align: center;
+}
+
+.advantages-block-slider-item-img {
+  height: 8rem;
+  margin-bottom: 4.5rem;
+}
+
+.advantages-block-slider-item-img img {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-block-slider-item h3 {
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.advantages-block-slider-item p {
+  font-size: 1.5rem;
+}
+
+.price {
+  background: url(../img/price/bg-fon.png) center no-repeat;
+  background-size: cover;
+}
+
+.price-title {
+  color: #ffffff;
+}
+
+.price-title h2 {
+  margin: -2rem;
+}
+
+.price-zone-btn {
+  margin-top: -3rem;
+  width: 85%;
+  padding: 1.5rem 3.5rem;
+  font-size: 1.4rem;
+}
+
+.price-zone-blocks {
+  margin-top: 5rem;
+}
+
+.price-zone-blocks-block {
+  margin: 1.5rem 0;
+  background: #ffffff;
+  min-height: 63rem;
+  padding: 1.4rem 0rem;
+  text-align: center;
+}
+
+.price-zone-blocks-block h3, .price-zone-blocks-block p {
+  margin: 3.5rem;
+  font-size: 1.8rem;
+  font-family: 'Proxima Nova_Bold', sans-serif;
+}
+
+.price-zone-blocks-block--img img {
+  max-width: 25rem;
+  width: 100%;
+}
+
+.price-zone-blocks-block ul {
+  font-size: 1.8rem;
+  margin-left: -4rem;
+  min-height: 14rem;
+}
+
+.price-zone-blocks-block ul li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.price-zone-blocks-block ul li::before {
+  content: '';
+  display: inline-block;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/ok.png) center no-repeat;
+  -webkit-box-sizing: 100%;
+          box-sizing: 100%;
+  vertical-align: middle;
+}
+
+.price-zone-blocks-block button {
+  width: 50%;
+}
+
+.reviews {
+  background: #ffffff url(../img/reviews/bg-fone.png) bottom left/25% no-repeat;
+}
+
+.reviews .s-slider {
+  padding: 5rem 6rem;
+  -webkit-box-shadow: 0px 12px 18px 0 rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 12px 18px 0 rgba(0, 0, 0, 0.11);
+}
+
+.reviews .s-slider-item .fotorama {
+  margin-left: 1px;
+}
+
+.reviews .s-slider-item-block-info ul {
+  margin: 0;
+  padding: 0 0 3rem;
+  list-style: none;
+}
+
+.reviews .s-slider-item-block-info ul li {
+  font-size: 1.6rem;
+  line-height: 2.5;
+}
+
+.reviews .s-slider-item-block-fb {
+  margin-right: 1px;
+}
+
+.reviews .s-slider-item-block-fb h5 {
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  font-size: 1.6rem;
+}
+
+.reviews .s-slider-item-block-fb p {
+  border: 2px solid #358b11;
+  padding: 2.3rem 2.3rem 2rem 2rem;
+  font-size: 1.5rem;
+}
+
+.reviews-form {
+  margin-top: 7rem;
+}
+
+.reviews-form .form h2 {
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.reviews-form-paragraph {
+  margin-bottom: -1rem;
+}
+
+.scheme {
+  background: #ffffff url(../img/scheme/bg-fon.png) no-repeat right -20% bottom -17rem/55%;
+}
+
+.scheme-block {
+  margin-top: 2rem;
+  min-height: 26rem;
+}
+
+.scheme-block h3 {
+  margin-bottom: 2rem;
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  font-size: 2.2rem;
+}
+
+.scheme-block p {
+  font-size: 1.7rem;
+}
+
+.all_inclusive {
+  background: #f5f5f5;
+}
+
+.all_inclusive-title {
+  min-height: 15rem;
+}
+
+.all_inclusive-title h2 {
+  font-size: 4.5rem;
+  color: #358b11;
+  margin-bottom: -1.5rem;
+}
+
+.all_inclusive-title p {
+  font-size: 1.6rem;
+}
+
+.all_inclusive-paragraph {
+  margin-top: 2rem;
+  min-height: 10rem;
+}
+
+.all_inclusive-paragraph-circle {
+  display: inline-block;
+  background: #358b11;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.all_inclusive-paragraph-circle-border {
+  position: relative;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.3rem;
+  border: 2px solid #358b11;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  color: #ffffff;
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  font-size: 1.9rem;
+  vertical-align: top;
+}
+
+.all_inclusive-paragraph-info {
+  margin-left: 1rem;
+  display: inline-block;
+}
+
+.all_inclusive-paragraph-info h3 {
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 0rem;
+}
+
+.all_inclusive-paragraph-info p {
+  font-size: 1.3rem;
+}
+
+.danger {
+  position: relative;
+}
+
+.danger .woomen {
+  position: absolute;
+  left: 50%;
+  width: 30rem;
+  bottom: 3rem;
+  margin-left: -19rem;
+}
+
+.danger-title {
+  margin-bottom: 7rem;
+}
+
+.danger-blocks h3 {
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  font-size: 2.1rem;
+  padding: 2.5rem;
+}
+
+.danger-blocks ul {
+  padding: 0 2rem;
+  list-style: none;
+}
+
+.danger-blocks ul li {
+  padding-left: 3.5rem;
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.danger-blocks ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 3rem;
+  height: 4rem;
+}
+
+.danger-blocks-bad-info {
+  min-height: 37rem;
+  border: 4px solid;
+  border-color: rgba(49, 49, 49, 0.5);
+}
+
+.danger-blocks-bad ul li {
+  margin-bottom: 5rem;
+}
+
+.danger-blocks-bad h3 {
+  opacity: 0.5;
+}
+
+.danger-blocks-bad li::before {
+  background: url(../img/error.png) center no-repeat;
+}
+
+.danger-blocks-good-info {
+  min-height: 37rem;
+  border: 4px solid;
+  border-color: #358b11;
+}
+
+.danger-blocks-good li::before {
+  background: url(../img/ok.png) center no-repeat;
+}
+
+.material-title {
+  margin-top: -5rem;
+}
+
+.material-block {
+  text-align: center;
+}
+
+.material-block p {
+  font-family: 'Proxima Nova_Reg', sans-serif;
+  font-size: 1.9rem;
+  margin: 5rem 0;
+}
+
+.material-block .advantages-block-slider-item {
+  position: relative;
+  height: 35rem;
+}
+
+.material-block .advantages-block-slider-item-img {
+  height: 17rem;
+}
+
+.material-block .advantages-block-slider-item p {
+  margin: -1rem 0 2rem;
+}
+
+.material-block .advantages-block-slider-item a {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1.6rem;
+}
+
+.tour {
+  background: url(../img/tour/bg-fon.jpg) center left 60% no-repeat;
+}
+
+.tour-blocks-title {
+  margin-top: 4rem;
+  text-align: left;
+}
+
+.tour-blocks-title h2 {
+  font-size: 4rem;
+  font-family: 'Proxima Nova_Bold', sans-serif;
+}
+
+.tour-blocks-title p {
+  font-size: 2.2rem;
+}
+
+.tour-blocks-form-btn.button {
+  padding: 0;
+  margin: 0;
+}
+
+.additional {
+  padding: 1rem 0 7rem;
+  background-color: #286b0a;
+  color: #ffffff;
+}
+
+.additional-title {
+  margin-top: 4rem;
+  color: #ffffff;
+}
+
+.additional-title h2 {
+  margin-bottom: -1.5rem;
+}
+
+.additional-title p {
+  font-size: 1.9rem;
+}
+
+.additional-blocks-block {
+  padding: 2rem;
+}
+
+.additional-blocks-block--img img {
+  width: 100%;
+  height: 100%;
+  max-height: 20rem;
+  max-width: 31rem;
+}
+
+.additional-blocks-block p {
+  font-family: 'Proxima Nova_Bold', sans-serif;
+  font-size: 1.9rem;
+  margin: 2.4rem;
+}
+
+.additional-blocks-block--btn {
+  width: 55%;
+}
+
+.contacts {
+  background: url(../img/contacts/bg-fon.png) center no-repeat;
+}
+
+.contacts-main-info h2 {
+  font-size: 3.6rem;
+  font-family: 'Proxima Nova_Bold', sans-serif;
+}
+
+.contacts-main-info p {
+  font-size: 1.8rem;
+  margin: 2rem;
+}
+
+.contacts-main-info p a {
+  color: #292929;
+  border-bottom: 1px dashed;
+}
+
+.contacts-main-info p a:hover {
+  border-bottom: 1px solid;
+  color: darkgray;
+}
+
+.contacts-main-form {
+  padding: 1rem;
+}
+
+.contacts-main-form textarea {
+  height: 8rem;
+}
+
+.contacts-main-form-btn {
+  font-size: 1.1rem;
+}
+
+.footer-sections-center {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.footer-sections-center a {
+  color: #292929;
+  border-bottom: 1px dashed;
+}
+
+.footer-sections-center a:hover {
+  border-bottom: 1px solid;
+  color: darkgray;
+}
+
+.footer-sections-right {
+  text-align: right;
+}
+
+/* *style for modal windows */
+.modal-content {
+  left: 50%;
+  top: 15%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  justify-items: center;
+  text-align: center;
+  padding: 2rem 3rem;
+  width: 70%;
+}
+
+.modal-body .close {
+  position: relative;
+  font-size: 3rem;
+  right: -7rem;
+  top: -3.8rem;
+  color: #ffffff;
+}
+
+.modal-body-form {
+  padding: 0;
+}
+
+.modal-body-form textarea {
+  height: auto;
+}
+
+.modal-body h3 {
+  margin-top: 1rem;
+}
+
+.modal-body h3, .modal-body p {
+  color: #292929;
+  font-size: 2rem;
+}
+
+.modal-footer {
+  border: none;
+}
+
+@media (max-width: 1199px) {
+  .price-zone-header {
+    margin-bottom: -4rem;
+  }
+  .price-zone-blocks-block {
+    min-height: 53rem;
+  }
+  .price-zone-blocks-block h3 {
+    min-height: 4rem;
+    margin: 2rem;
+  }
+  .price-zone-blocks-block p {
+    margin: 1.4rem;
+  }
+  .price-zone-blocks-block ul {
+    font-size: 1.5rem;
+    margin: -1rem 0 -1rem -4rem;
+  }
+  .reviews {
+    background: #ffffff url(../img/reviews/bg-fone.png) bottom right/28% no-repeat;
+  }
+  .scheme {
+    background: #ffffff url(../img/scheme/bg-fon.png) no-repeat right -70% bottom -12rem/65%;
+  }
+  .danger-blocks ul {
+    min-height: 43rem;
+  }
+  .additional-blocks-block--btn-center {
+    margin-top: 3.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .reviews {
+    background: #ffffff;
+  }
+  .scheme {
+    background: #ffffff url(../img/scheme/bg-fon.png) no-repeat right -80% bottom -12rem/80%;
+  }
+  .woomen {
+    display: none;
+  }
+  .tour {
+    padding: 5rem;
+    background: url(../img/tour/bg-fon.jpg) center left 65% bo no-repeat;
+  }
+  input.button.tour-blocks-form-btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .material {
+    padding: 0;
+  }
+  .tour {
+    background: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#ededed));
+    background-image: linear-gradient(to bottom, #f5f5f5, #ededed);
+  }
+  .tour-blocks-title {
+    text-align: center;
+  }
+  .contacts {
+    background: none;
+  }
+  .contacts-main-info {
+    text-align: center;
+  }
+  .footer-sections {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-het-btn {
+    width: 90%;
+  }
+  .header-main {
+    text-align: center;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .scheme {
+    background: none;
+  }
+  .scheme-block {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 7px;
+  }
+  .button {
+    font-family: 'Proxima Nova_Bold', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.7px;
+  }
+}
