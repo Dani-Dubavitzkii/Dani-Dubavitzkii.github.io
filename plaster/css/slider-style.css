@@ -1,0 +1,116 @@
+
+.slick-list {
+	overflow: hidden;
+}
+.slick-track{
+	display: flex;
+}
+
+
+/* ?slider */
+.slider{
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	min-width: 1px;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	font-size: 0;
+}
+
+.slick-arrow.slick-prev{
+	background: url(../img/for_sliders/prev_lite.svg) 50% 50% / 40% no-repeat;
+	border: none;
+	left: -50px;
+}
+
+.slick-arrow.slick-next{
+	background: url(../img/for_sliders/next_lite.svg) 50% 50% / 40% no-repeat;
+	border: none;
+	right: -50px;
+	
+}
+
+/* ! s-slider */
+
+.s-slider{
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	align-items: center;
+	justify-content: center;
+}
+
+.s-slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	font-size: 0;
+}
+
+.s-slider .slick-arrow.slick-prev{
+	background: #358b11 url(../img/for_sliders/prev_white.svg) 50% 50% / 40% no-repeat;
+	left: -30px;
+}
+
+.s-slider .slick-arrow.slick-next{
+	background: #358b11 url(../img/for_sliders/next_white.svg) 50% 50% / 40% no-repeat;
+	right: -30px;
+}
+.s-slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.s-slider .slick-dots li{
+	list-style: none;
+	margin: 0 15px;
+}
+.s-slider .slick-dots li button{
+	outline: none;
+	border: none;
+	font-size: 0;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #358b11;
+}
+.s-slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 2px solid #358b11;
+}
+
+@media (max-width: 576px){
+	.slick-arrow.slick-prev{
+		left: 7%;
+	}
+	
+	.slick-arrow.slick-next{
+		right: 7%;
+	}
+}
+
+
+
+/* ! for fotorama */
+
+.fotorama__arr.fotorama__arr--next{
+	background: url(../img/for_sliders/next_lite.svg)  0  0 / 60% no-repeat;
+	top: 80%;
+}
+.fotorama__arr.fotorama__arr--prev{
+	background:  url(../img/for_sliders/prev_lite.svg)  0 0 / 60% no-repeat;
+	top: 80%;
+}
