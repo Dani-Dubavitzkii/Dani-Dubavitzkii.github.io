@@ -457,7 +457,7 @@ html {
   }
   .header__het-name::after {
     content: '';
-    margin-left: 0.3rem;
+    margin-left: 0.1rem;
   }
   .header__het-phone {
     text-align: right;
