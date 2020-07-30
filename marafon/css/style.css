@@ -455,6 +455,9 @@ html {
   .network-icons .network-icon__link {
     height: 3rem;
   }
+  .header__het-name{
+  font-size: 2.3rem;
+  }
   .header__het-name::after {
     content: none;
     margin-left: 0.1rem;
