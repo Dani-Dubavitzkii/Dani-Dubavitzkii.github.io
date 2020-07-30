@@ -456,7 +456,7 @@ html {
     height: 3rem;
   }
   .header__het-name {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
   .header__het-name::after {
     content: none;
