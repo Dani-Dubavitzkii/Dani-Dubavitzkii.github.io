@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700;800&display=swap');
+
+$bg: #E5E5E5;
+$question: #F6F6F6;
+$heading: #000;
+$text: #000;
+$btn: #E41579;
+$btnFocus: #fff;
+
+html{
+	font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+	background: $bg;
+}
+.container{
+	padding: 0 24rem;
+}
+.header{
+	display: flex;
+	flex-direction: column;
+}
+.question{
+	margin: 15rem 0 0;
+	height: 150px;
+
+	
+	font-weight: 800;
+	font-size: 130px;
+	line-height: 153px;
+	color: $question;
+}
+.swell{
+	margin: 0;
+	height: 60px;
+	
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.about{
+	width: 1170px;
+	
+	font-family: Raleway;
+	font-style: normal;
+	align-items: center;
+	text-align: center;
+}
+
+.card{
+	display: flex;
+	margin-bottom: 4.5rem;
+	&_content{
+		display: flex;
+		flex-direction: column;
+		margin-left: 3rem;
+		max-width: 57rem;
+		&-question{
+			margin-top: 3rem;
+			font-weight: bold;
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			color: $heading;
+		}
+		&-text{
+			display: none;
+			font-weight: 400;
+			font-size: 1.6rem;
+			line-height: 1.9rem;
+			color: $heading;
+
+		}
+	}
+}
+
+.btn{
+	width: 7rem;
+	height: 7rem;
+	border-radius: 50%;
+	color: $btn;
+	font-size: 4rem;
+	font-weight: 100;
+	background: $bg;
+	border: 1px solid $btn;
+	transform: rotate(45deg);
+	transition-property: background, transform, color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+	&:hover{
+		text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+		transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+	}
+
+	&:focus{
+		outline: none;
+		color: $btnFocus;
+		background: $btn;
+		transform: rotate(0);
+		&:hover{
+			text-shadow: none;
+		}
+	}
+	&-active{
+		width: 7rem;
+		height: 7rem;
+		border-radius: 50%;
+		font-size: 4rem;
+		font-weight: 100;
+		border: 1px solid $btn;
+		color: $btnFocus;
+		background: $btn;
+		transform: rotate(0);
+		transition-property: background, transform, color;
+		transition-duration: 0.5s;
+		transition-timing-function: linear;
+		&:focus{
+			outline: none;
+		}
+		&:active{
+			outline: none;
+			color: $btn;
+			background: $bg;
+			transform: rotate(45deg);
+		}
+	}
+}
+
+.cabbage{
+position: absolute;
+left: 825.67px;
+top: 338px;
+}
+
