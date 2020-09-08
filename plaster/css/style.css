@@ -835,6 +835,9 @@ iframe {
   .scheme-block {
     text-align: center;
   }
+  .reviews {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
